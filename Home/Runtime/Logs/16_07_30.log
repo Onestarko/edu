@@ -1,0 +1,235 @@
+[ 2016-07-30T09:30:22+08:00 ] 0.0.0.0 /edu/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.016964s ]
+INFO: [ route_check ] --END-- [ RunTime:0.086937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014002s ]
+SQL: SHOW COLUMNS FROM `edu_clicknum` [ RunTime:0.055631s ]
+SQL: SELECT * FROM `edu_clicknum` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001336s ]
+NOTIC: [8] Undefined index: clicknum D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `edu_notice` [ RunTime:0.008249s ]
+SQL: SELECT * FROM `edu_notice` ORDER BY addtime desc LIMIT 6   [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `edu_library` [ RunTime:0.007928s ]
+SQL: SELECT * FROM `edu_library` ORDER BY addtime desc LIMIT 3   [ RunTime:0.000677s ]
+NOTIC: [8] Undefined index: _type D:\wamp\www\edu\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = '55' ) LIMIT 1   [ RunTime:0.009726s ]
+SQL: SELECT * FROM `edu_library` ORDER BY dwloadnum desc LIMIT 10   [ RunTime:0.000405s ]
+NOTIC: [8] Undefined index: _type D:\wamp\www\edu\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = '55' ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: select uid,count(*) num from edu_library group by uid order by num desc limit 8 [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.004927s ]
+SQL: SELECT `username`,`picture` FROM `edu_users` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `edu_friend` [ RunTime:0.019243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_friend` WHERE ( uid=55 ) LIMIT 1   [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `edu_video` [ RunTime:0.007545s ]
+SQL: SELECT * FROM `edu_video` ORDER BY addtime desc LIMIT 3   [ RunTime:0.000803s ]
+SQL: SELECT * FROM `edu_video` WHERE ( status=2 ) ORDER BY favonum desc LIMIT 8   [ RunTime:0.000394s ]
+SQL: SELECT * FROM `edu_video` WHERE ( status=2 ) ORDER BY clicknum desc LIMIT 10   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.030280s ]
+SQL: SELECT `id`,`name` FROM `edu_cat` WHERE ( pid=0 ) LIMIT 6   [ RunTime:0.013526s ]
+SQL: SELECT * FROM `edu_video` WHERE ( status=2 ) ORDER BY addtime desc LIMIT 5   [ RunTime:0.000711s ]
+SQL: select nid,count(*) num from edu_zan where nid<>0 group by nid order by num desc limit 3 [ RunTime:0.009639s ]
+SQL: select uid,count(*) num from edu_note group by uid order by num desc limit 8 [ RunTime:0.000398s ]
+ERR: 1146:Table 'edu002.edu_note' doesn't exist
+ [ SQL语句 ] : select uid,count(*) num from edu_note group by uid order by num desc limit 8
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.006532s ]
+SQL: SELECT `id`,`name` FROM `edu_cat` WHERE ( pid!=0 )  [ RunTime:0.000591s ]
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 92 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `bbs_message` [ RunTime:0.039812s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '31') OR (`keyword` LIKE '%,31') OR (`keyword` LIKE '31,%') OR (`keyword` LIKE '%,31,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.009911s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '31') OR (`keyword` LIKE '%,31') OR (`keyword` LIKE '31,%') OR (`keyword` LIKE '%,31,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '33') OR (`keyword` LIKE '%,33') OR (`keyword` LIKE '33,%') OR (`keyword` LIKE '%,33,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '33') OR (`keyword` LIKE '%,33') OR (`keyword` LIKE '33,%') OR (`keyword` LIKE '%,33,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '32') OR (`keyword` LIKE '%,32') OR (`keyword` LIKE '32,%') OR (`keyword` LIKE '%,32,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '32') OR (`keyword` LIKE '%,32') OR (`keyword` LIKE '32,%') OR (`keyword` LIKE '%,32,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '30') OR (`keyword` LIKE '%,30') OR (`keyword` LIKE '30,%') OR (`keyword` LIKE '%,30,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000342s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '30') OR (`keyword` LIKE '%,30') OR (`keyword` LIKE '30,%') OR (`keyword` LIKE '%,30,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '') OR (`keyword` LIKE '%,') OR (`keyword` LIKE ',%') OR (`keyword` LIKE '%,,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000401s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '') OR (`keyword` LIKE '%,') OR (`keyword` LIKE ',%') OR (`keyword` LIKE '%,,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '') OR (`keyword` LIKE '%,') OR (`keyword` LIKE ',%') OR (`keyword` LIKE '%,,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '') OR (`keyword` LIKE '%,') OR (`keyword` LIKE ',%') OR (`keyword` LIKE '%,,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.027892s ]
+SQL: SELECT `id`,`uid`,`content` FROM `bbs_question` WHERE ( `status` = '1' ) AND ( `isbest` = '1' ) AND ( `replay` <> '' ) ORDER BY addtime desc LIMIT 6   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `edu_flink` [ RunTime:0.013872s ]
+SQL: SELECT * FROM `edu_flink` WHERE ( status=2 )  [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: user D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 132 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\wamp\www\edu\Home\Runtime\Cache\a0df498f3fa8ed5d3704c11b76d93149f0b249f5.file.index.html.php 第 145 行.
+NOTIC: [8] Undefined index: user D:\wamp\www\edu\Home\Runtime\Cache\a0df498f3fa8ed5d3704c11b76d93149f0b249f5.file.index.html.php 第 204 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.268629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.268842s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.016858s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002710s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006198s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030744s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.007933s ]
+INFO: [ view_end ] --END-- [ RunTime:0.008075s ]
+
+[ 2016-07-30T09:30:25+08:00 ] 0.0.0.0 /edu/index.php/Users/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001197s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\edu\Home\Lib\Action\UsersAction.class.php 第 2 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: user D:\wamp\www\edu\Home\Runtime\Cache\5eb86b5f52faad6893408a91f10736e2d8252303.file.login.html.php 第 72 行.
+NOTIC: [8] Undefined index: user D:\wamp\www\edu\Home\Runtime\Cache\5eb86b5f52faad6893408a91f10736e2d8252303.file.login.html.php 第 81 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037159s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000868s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000742s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000576s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003547s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000961s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2016-07-30T09:30:25+08:00 ] 0.0.0.0 /edu/index.php/Users/edu/Public/css/simple.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001496s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001779s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\edu\Home\Lib\Action\UsersAction.class.php 第 2 行.
+ERR: 非法操作:edu
+
+[ 2016-07-30T09:30:29+08:00 ] 0.0.0.0 /edu/index.php/Users/checkname
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000967s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\edu\Home\Lib\Action\UsersAction.class.php 第 2 行.
+SQL: SELECT * FROM `edu_users` WHERE ( username = 'admin' or email='admin' ) LIMIT 1   [ RunTime:0.042836s ]
+
+[ 2016-07-30T09:30:32+08:00 ] 0.0.0.0 /edu/index.php/Users/checkname
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001451s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\edu\Home\Lib\Action\UsersAction.class.php 第 2 行.
+SQL: SELECT * FROM `edu_users` WHERE ( username = 'admin' or email='admin' ) LIMIT 1   [ RunTime:0.000431s ]
+
+[ 2016-07-30T09:30:32+08:00 ] 0.0.0.0 /edu/index.php/Users/checkpass
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002101s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002412s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002520s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\edu\Home\Lib\Action\UsersAction.class.php 第 2 行.
+SQL: SELECT * FROM `edu_users` WHERE ( username = 'admin' or email='admin' ) LIMIT 1   [ RunTime:0.000537s ]
+
+[ 2016-07-30T09:30:32+08:00 ] 0.0.0.0 /edu/index.php/Users/dologin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003564s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003888s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003715s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\edu\Home\Lib\Action\UsersAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: _type D:\wamp\www\edu\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\wamp\www\edu\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\wamp\www\edu\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\wamp\www\edu\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+SQL: SELECT * FROM `edu_users` WHERE ( `username` = 'admin' ) OR ( `email` = 'admin' )  [ RunTime:0.000604s ]
+NOTIC: [2048] Declaration of MessageAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\edu\Home\Lib\Action\MessageAction.class.php 第 1136 行.
+SQL: SHOW COLUMNS FROM `bbs_comm` [ RunTime:0.025597s ]
+SQL: SHOW COLUMNS FROM `bbs_message` [ RunTime:0.004643s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.004371s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.006319s ]
+SQL: SELECT * FROM `bbs_message` WHERE ( uid=55 and status='1' )  [ RunTime:0.000375s ]
+SQL: SELECT * FROM `bbs_comm` WHERE ( uid=55 )  [ RunTime:0.000258s ]
+SQL: SELECT `id`,`tid`,`content`,`replay` FROM `bbs_question` WHERE ( uid='55' and remind='1' and status='1' ) ORDER BY rtime desc  [ RunTime:0.000266s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\edu\Home\Lib\Action\MessageAction.class.php 第 1032 行.
+
+[ 2016-07-30T09:30:32+08:00 ] 0.0.0.0 /edu/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002051s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002360s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `edu_clicknum` [ RunTime:0.004553s ]
+SQL: SELECT * FROM `edu_clicknum` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: clicknum D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `edu_notice` [ RunTime:0.006054s ]
+SQL: SELECT * FROM `edu_notice` ORDER BY addtime desc LIMIT 6   [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `edu_library` [ RunTime:0.004783s ]
+SQL: SELECT * FROM `edu_library` ORDER BY addtime desc LIMIT 3   [ RunTime:0.000333s ]
+NOTIC: [8] Undefined index: _type D:\wamp\www\edu\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = '55' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT * FROM `edu_library` ORDER BY dwloadnum desc LIMIT 10   [ RunTime:0.000348s ]
+NOTIC: [8] Undefined index: _type D:\wamp\www\edu\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = '55' ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: select uid,count(*) num from edu_library group by uid order by num desc limit 8 [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.005865s ]
+SQL: SELECT `username`,`picture` FROM `edu_users` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `edu_friend` [ RunTime:0.004234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_friend` WHERE ( uid=55 ) LIMIT 1   [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `edu_video` [ RunTime:0.004493s ]
+SQL: SELECT * FROM `edu_video` ORDER BY addtime desc LIMIT 3   [ RunTime:0.000378s ]
+SQL: SELECT * FROM `edu_video` WHERE ( status=2 ) ORDER BY favonum desc LIMIT 8   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `edu_video` WHERE ( status=2 ) ORDER BY clicknum desc LIMIT 10   [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.004569s ]
+SQL: SELECT `id`,`name` FROM `edu_cat` WHERE ( pid=0 ) LIMIT 6   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `edu_video` WHERE ( status=2 ) ORDER BY addtime desc LIMIT 5   [ RunTime:0.000347s ]
+SQL: select nid,count(*) num from edu_zan where nid<>0 group by nid order by num desc limit 3 [ RunTime:0.000226s ]
+SQL: select uid,count(*) num from edu_note group by uid order by num desc limit 8 [ RunTime:0.000357s ]
+ERR: 1146:Table 'edu002.edu_note' doesn't exist
+ [ SQL语句 ] : select uid,count(*) num from edu_note group by uid order by num desc limit 8
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.005753s ]
+SQL: SELECT `id`,`name` FROM `edu_cat` WHERE ( pid!=0 )  [ RunTime:0.000427s ]
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 92 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\edu\Home\Lib\Action\IndexAction.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `bbs_message` [ RunTime:0.004861s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '33') OR (`keyword` LIKE '%,33') OR (`keyword` LIKE '33,%') OR (`keyword` LIKE '%,33,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '33') OR (`keyword` LIKE '%,33') OR (`keyword` LIKE '33,%') OR (`keyword` LIKE '%,33,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '31') OR (`keyword` LIKE '%,31') OR (`keyword` LIKE '31,%') OR (`keyword` LIKE '%,31,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000370s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '31') OR (`keyword` LIKE '%,31') OR (`keyword` LIKE '31,%') OR (`keyword` LIKE '%,31,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '32') OR (`keyword` LIKE '%,32') OR (`keyword` LIKE '32,%') OR (`keyword` LIKE '%,32,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000317s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '32') OR (`keyword` LIKE '%,32') OR (`keyword` LIKE '32,%') OR (`keyword` LIKE '%,32,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '30') OR (`keyword` LIKE '%,30') OR (`keyword` LIKE '30,%') OR (`keyword` LIKE '%,30,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '30') OR (`keyword` LIKE '%,30') OR (`keyword` LIKE '30,%') OR (`keyword` LIKE '%,30,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '') OR (`keyword` LIKE '%,') OR (`keyword` LIKE ',%') OR (`keyword` LIKE '%,,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000271s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '') OR (`keyword` LIKE '%,') OR (`keyword` LIKE ',%') OR (`keyword` LIKE '%,,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT `id`,`title` FROM `bbs_message` WHERE ( (`keyword` LIKE '') OR (`keyword` LIKE '%,') OR (`keyword` LIKE ',%') OR (`keyword` LIKE '%,,%') ) AND ( `status` = '1' ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_message` WHERE ( (`keyword` LIKE '') OR (`keyword` LIKE '%,') OR (`keyword` LIKE ',%') OR (`keyword` LIKE '%,,%') ) AND ( `status` = '1' ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.004796s ]
+SQL: SELECT `id`,`uid`,`content` FROM `bbs_question` WHERE ( `status` = '1' ) AND ( `isbest` = '1' ) AND ( `replay` <> '' ) ORDER BY addtime desc LIMIT 6   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `edu_flink` [ RunTime:0.006021s ]
+SQL: SELECT * FROM `edu_flink` WHERE ( status=2 )  [ RunTime:0.000362s ]
+NOTIC: [2048] Declaration of MessageAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\edu\Home\Lib\Action\MessageAction.class.php 第 1136 行.
+SQL: SHOW COLUMNS FROM `bbs_comm` [ RunTime:0.004817s ]
+SQL: SELECT * FROM `bbs_message` WHERE ( uid=55 and status='1' )  [ RunTime:0.000340s ]
+SQL: SELECT * FROM `bbs_comm` WHERE ( uid=55 )  [ RunTime:0.000344s ]
+SQL: SELECT `id`,`tid`,`content`,`replay` FROM `bbs_question` WHERE ( uid='55' and remind='1' and status='1' ) ORDER BY rtime desc  [ RunTime:0.000551s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\edu\Home\Lib\Action\MessageAction.class.php 第 1032 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016399s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001790s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000904s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004738s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000910s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001057s ]
+
